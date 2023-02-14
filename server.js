@@ -17,8 +17,13 @@ app.use(express.static("public"));
 //Setting routes for APIs
 //This gets notes saved and joins it in db.json
 app.get("/api/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "/db/db.json"))
-});
+    fs.readFile ('db/db.json', 'utf-8', (err,data) =>err ? console.log(err) : 
+    res.json (JSON.parse(data)))
+        
+    });
+
+
+
 
 // Post function to add new notes to db.json
 app.post("/api/notes", (req, res) => {
