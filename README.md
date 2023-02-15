@@ -13,7 +13,7 @@ https://github.com/silviaolinger/Note-Tracker
 # Deployed at :
  - GitHub:
  https://silviaolinger.github.io/Note-Tracker/
- - Heroku
+ - Heroku:
  https://desolate-dawn-26064.herokuapp.com/
 
  
